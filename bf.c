@@ -37,34 +37,10 @@ printI1(){
 	}
 }
 
-allocAndInit(){realloc(I1,sizeof(int)*I1[1]<<1);memset(I1+I1[1],Il[8],I1[1]*sizeof(int));I1[1]<<=1;}
+allocAndInit(){I1=realloc(I1,sizeof(int)*I1[1]<<1);memset(I1+I1[1],Il[8],I1[1]*sizeof(int));I1[1]<<=1;}
 
 doLoop(){/*printI1();*/lI[I1[2]]&&(IlReadLoop(I1[4] = 0),*I1-I1[1]||allocAndInit(),doLoop(++(I1[2])));}
 
-// <>+-.,[]\0%c
-CharLoop(){
-	(I1[0]-12)&&
-}
+CharLoop(){(I1[0]-12)&&(Il[*I1] = Il[I1[0] - 1] + 2.0 + (-21.0 + (21.0 + (-11.0 + (4.0 + (-23.0/30.0 + (-0.1 + (139.0/1260.0 + (-1277.0/40320.0 + (31.0/8640.0 + (251.0*(-10.0 + (double)*I1))/453600.0)*(-9.0 + (double)*I1))*(-8.0 + (double)*I1))* (-7.0 + (double)*I1))*(-6.0 + (double)*I1))*(-5.0 + (double)*I1))*(-4.0 + (double)*I1))*(-3.0 + (double)*I1))*(-2.0 + (double)*I1))* (-1.0 + (double)*I1) + 0.001,CharLoop((*I1)++));}
 
-CalculateCharTable(){
-	CharLoop(Il[0] = ';' + (I1[0] = 1));
-	int i;
-	for(i = 1; i < 12; i += 1) {
-		Il[i] = Il[i - 1] + 2.0 + (-21.0 + (21.0 + (-11.0 + (4.0 + (-23.0/30.0 + (-0.1 + (139.0/1260.0 + (-1277.0/40320.0 + (31.0/8640.0 + (251.0*(-10.0 + (double)i))/453600.0)*(-9.0 + (double)i))*(-8.0 + (double)i))* (-7.0 + (double)i))*(-6.0 + (double)i))*(-5.0 + (double)i))*(-4.0 + (double)i))*(-3.0 + (double)i))*(-2.0 + (double)i))* (-1.0 + (double)i) + 0.001;
-		printf("%d, %c\n", Il[i]);
-	}
-	
-	// 00111100
-	// 00111110
-	// 00100000
-	// 00101101
-	// 00101110
-	// 00101100
-	// 01011011
-	// 01011101 
-	// 00000000
-	// 00100101
-	// 01100011
-}
-
-main(int argc, char**argv) {lI=argv[1],CalculateCharTable(),I1=calloc(8,sizeof(int)),I1[0]=5,I1[1]=8,doLoop();}
+main(int argc, char**argv) {I1=calloc(8,sizeof(int)),lI=argv[1],CharLoop(Il[0] = ';' + (I1[0] = 1)),I1[0]=5,I1[1]=8,doLoop();}
