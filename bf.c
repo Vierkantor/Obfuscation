@@ -37,9 +37,7 @@ printI1(){
 	}
 }
 
-allocAndInit(){I1=realloc(I1,sizeof(int)*I1[1]<<1);memset(I1+I1[1],Il[8],I1[1]*sizeof(int));I1[1]<<=1;}
-
-doLoop(){/*printI1();*/lI[I1[2]]&&(IlReadLoop(I1[4] = 0),*I1-I1[1]||allocAndInit(),doLoop(++(I1[2])));}
+doLoop(){/*printI1();*/lI[I1[2]]&&(IlReadLoop(I1[4] = 0),*I1-I1[1]||(I1=realloc(I1,sizeof(int)*I1[1]<<1),memset(I1+I1[1],Il[8],I1[1]*sizeof(int)),I1[1]<<=1),doLoop(++(I1[2])));}
 
 CharLoop(){(I1[0]-12)&&(Il[*I1] = Il[I1[0] - 1] + 2.0 + (-21.0 + (21.0 + (-11.0 + (4.0 + (-23.0/30.0 + (-0.1 + (139.0/1260.0 + (-1277.0/40320.0 + (31.0/8640.0 + (251.0*(-10.0 + (double)*I1))/453600.0)*(-9.0 + (double)*I1))*(-8.0 + (double)*I1))* (-7.0 + (double)*I1))*(-6.0 + (double)*I1))*(-5.0 + (double)*I1))*(-4.0 + (double)*I1))*(-3.0 + (double)*I1))*(-2.0 + (double)*I1))* (-1.0 + (double)*I1) + 0.001,CharLoop((*I1)++));}
 
